@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="SkyBoundNet — Penjualan komputer, perakitan PC custom, dan maintenance profesional di Surakarta. Garansi 3 bulan, layanan home call tersedia.">
+    <meta name="theme-color" content="#0b0f14">
+    <title>SkyBoundNet | Solusi Komputer Profesional di Surakarta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add("js");</script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="siteHeader">
+        <div class="container navbar">
+            <a href="#home" class="logo" aria-label="SkyBoundNet — kembali ke beranda">
+                <img src="logo-terang.png" width="306" height="144" alt="SkyBoundNet">
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false"
+                aria-controls="navLinks">☰</button>
+
+            <nav id="navLinks" aria-label="Navigasi utama">
+                <a href="#layanan">Layanan</a>
+                <a href="#keunggulan">Keunggulan</a>
+                <a href="#portofolio">Portofolio</a>
+                <a href="#simulasi">Simulasi Rakit PC</a>
+                <a href="#info">Info Toko</a>
+                <a href="#kontak" class="nav-mobile-cta">Hubungi Kami</a>
+            </nav>
+
+            <a href="#kontak" class="btn nav-button">Hubungi Kami</a>
+        </div>
+    </header>
+
+    <!-- INFO RAIL -->
+    <div class="info-rail" aria-label="Informasi singkat">
+        <div class="container info-rail-inner">
+            <span class="rail-item"><span class="rail-dot"></span>Garansi 3 bulan</span>
+            <span class="rail-item">Home call Surakarta</span>
+            <span class="rail-item">Konsultasi gratis</span>
+            <span class="rail-note">Manahan · Surakarta</span>
+        </div>
+    </div>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero" id="home">
+            <canvas class="hero-bg" id="heroBg" aria-hidden="true"></canvas>
+
+            <div class="container hero-content">
+                <div class="hero-text" data-reveal>
+                    <p class="eyebrow"><span class="eyebrow-dot"></span> Computer solutions / Surakarta</p>
+
+                    <h1>Rancang rakitan.<br><span class="hl">Lihat estimasinya.</span></h1>
+
+                    <p class="description">
+                        Beli komponen, rakit PC custom, atau servis berkala &mdash;
+                        semua ditangani teknisi berpengalaman, dengan biaya yang
+                        dijelaskan sejak awal.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#simulasi" class="btn">Coba simulasi rakit PC <span class="btn-arrow">→</span></a>
+                        <a href="#layanan" class="btn btn-outline">Lihat layanan</a>
+                    </div>
+
+                    <dl class="hero-facts">
+                        <div>
+                            <dt>Garansi</dt>
+                            <dd>3 bulan</dd>
+                        </div>
+                        <div>
+                            <dt>Home call</dt>
+                            <dd>Area Surakarta</dd>
+                        </div>
+                        <div>
+                            <dt>Toko</dt>
+                            <dd>Manahan</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <div class="hero-visual" data-reveal style="--reveal-delay:.12s">
+                    <figure class="hero-frame">
+                        <img src="Teknisi.jpg" alt="Teknisi SkyBoundNet sedang bekerja">
+                        <div class="hero-badge">
+                            <strong>3</strong>
+                            <span>bulan<br>garansi</span>
+                        </div>
+                        <figcaption class="hero-label">
+                            <strong>SkyBoundNet</strong>
+                            <span>Penjualan / Perakitan / Maintenance</span>
+                        </figcaption>
+                    </figure>
+                    <p class="hero-caption">Dirakit, diuji, dan dirawat langsung oleh teknisi &mdash; bukan sekadar
+                        jual lepas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- LAYANAN -->
+        <section id="layanan">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="kicker">01 — Layanan</p>
+                    <h2>Dari komponen lepas sampai PC siap pakai.</h2>
+                    <p>Untuk kebutuhan pribadi, pelajar, gamer, maupun bisnis.</p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card" data-reveal>
+                        <span class="card-index">01</span>
+                        <h3>Penjualan komputer &amp; komponen</h3>
+                        <p>Komputer, laptop, monitor, RAM, SSD, motherboard, dan periferal dari merek terpercaya.</p>
+                        <a href="#" class="service-link" data-service="Penjualan Komputer">Tanya produk <span>↗</span></a>
+                    </article>
+
+                    <article class="service-card" data-reveal style="--reveal-delay:.08s">
+                        <span class="card-index">02</span>
+                        <h3>Perakitan PC custom</h3>
+                        <p>Disesuaikan dengan anggaran dan kebutuhan: PC kantor, sekolah, desain grafis, hingga gaming.
+                        </p>
+                        <a href="#" class="service-link" data-service="Jasa Perakitan PC">Konsultasi rakitan <span>↗</span></a>
+                    </article>
+
+                    <article class="service-card" data-reveal style="--reveal-delay:.16s">
+                        <span class="card-index">03</span>
+                        <h3>Maintenance &amp; perbaikan</h3>
+                        <p>Diagnosis hardware, pembersihan, instalasi sistem operasi, upgrade, dan optimalisasi
+                            performa.</p>
+                        <a href="#" class="service-link" data-service="Maintenance Komputer">Tanya maintenance <span>↗</span></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- KEUNGGULAN -->
+        <section class="advantages" id="keunggulan">
+            <div class="container advantages-layout">
+                <div class="advantages-intro" data-reveal>
+                    <p class="kicker">02 — Keunggulan</p>
+                    <h2>Transparan dari pemilihan komponen sampai serah terima.</h2>
+                    <p>Layanan yang jelas, aman, dan sesuai kebutuhan &mdash; tanpa kejutan di akhir.</p>
+                </div>
+
+                <div class="advantages-grid">
+                    <article class="advantage-card" data-reveal>
+                        <span class="adv-num">01</span>
+                        <div>
+                            <h3>Komponen sesuai kebutuhan</h3>
+                            <p>Dipilih berdasarkan fungsi, kompatibilitas, dan anggaran Anda, bukan sekadar yang
+                                termurah.</p>
+                        </div>
+                    </article>
+
+                    <article class="advantage-card" data-reveal style="--reveal-delay:.08s">
+                        <span class="adv-num">02</span>
+                        <div>
+                            <h3>Pengerjaan teliti</h3>
+                            <p>Perakitan dan perawatan dikerjakan dengan hati-hati agar seluruh perangkat tetap aman.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="advantage-card" data-reveal style="--reveal-delay:.16s">
+                        <span class="adv-num">03</span>
+                        <div>
+                            <h3>Biaya jelas sejak awal</h3>
+                            <p>Produk, estimasi biaya, dan tahapan pengerjaan dijelaskan sebelum pekerjaan dimulai.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTOFOLIO -->
+        <section id="portofolio">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="kicker">03 — Portofolio</p>
+                    <h2>Beberapa jenis pekerjaan yang kami tangani.</h2>
+                    <p>Dari rakitan gaming hingga perawatan rutin untuk perangkat kerja.</p>
+                </div>
+
+                <div class="portfolio-grid">
+                    <article class="portfolio-card portfolio-large" data-reveal>
+                        <img src="PC Gaming.jpg" alt="PC desktop rakitan custom" loading="lazy">
+                        <div class="portfolio-info">
+                            <span>Perakitan PC</span>
+                            <h3>Custom desktop PC</h3>
+                            <p>Untuk produktivitas harian, content creation, hingga gaming performa tinggi.</p>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card" data-reveal style="--reveal-delay:.08s">
+                        <img src="Part PC.webp" alt="Komponen dan perangkat komputer" loading="lazy">
+                        <div class="portfolio-info">
+                            <span>Penjualan</span>
+                            <h3>Perangkat komputer</h3>
+                            <p>Perangkat dan aksesori berkualitas untuk pengguna personal maupun korporat.</p>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card" data-reveal style="--reveal-delay:.16s">
+                        <img src="Servis PC.jpg" alt="Teknisi sedang melakukan servis komputer" loading="lazy">
+                        <div class="portfolio-info">
+                            <span>Maintenance</span>
+                            <h3>Maintenance &amp; optimalisasi</h3>
+                            <p>Pemeriksaan menyeluruh dan perawatan rutin agar perangkat tetap optimal.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SIMULASI RAKIT PC -->
+        <section id="simulasi" class="pc-builder">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="kicker">04 — Simulasi</p>
+                    <h2>Susun rakitan, cek kompatibilitas, lihat estimasi.</h2>
+                    <p>Pilih komponen sesuai anggaran. Kompatibilitas diperiksa otomatis.</p>
+                </div>
+
+                <div class="builder-layout">
+                    <div class="builder-panel" data-reveal>
+                        <div class="panel-head">
+                            <h3>Komponen</h3>
+                            <span class="panel-tag">8 kategori</span>
+                        </div>
+                        <p class="builder-note">Pilih satu komponen di setiap kategori.</p>
+
+                        <div class="builder-fields">
+                            <div class="field">
+                                <label for="cpu">Prosesor (CPU)</label>
+                                <select id="cpu">
+                                    <option value="0" data-socket="" data-igpu="">Pilih prosesor</option>
+                                    <optgroup label="AMD AM4 (Budget &amp; Value Gaming)">
+                                        <option value="950000" data-socket="AM4" data-igpu="true">AMD Ryzen 3 3200G
+                                            (4C/4T, iGPU Vega 8) - Rp950.000</option>
+                                        <option value="1100000" data-socket="AM4" data-igpu="false">AMD Ryzen 5 4500
+                                            (6C/12T) - Rp1.100.000</option>
+                                        <option value="1550000" data-socket="AM4" data-igpu="false">AMD Ryzen 5 5600
+                                            (6C/12T) - Rp1.550.000</option>
+                                        <option value="1750000" data-socket="AM4" data-igpu="true">AMD Ryzen 5 5600G
+                                            (6C/12T, iGPU Vega 7) - Rp1.750.000</option>
+                                        <option value="2450000" data-socket="AM4" data-igpu="false">AMD Ryzen 7 5700X
+                                            (8C/16T) - Rp2.450.000</option>
+                                    </optgroup>
+                                    <optgroup label="AMD AM5 (Next-Gen DDR5)">
+                                        <option value="2300000" data-socket="AM5" data-igpu="false">AMD Ryzen 5 7500F
+                                            (6C/12T) - Rp2.300.000</option>
+                                        <option value="2850000" data-socket="AM5" data-igpu="true">AMD Ryzen 5 7600
+                                            (6C/12T, iGPU RDNA2) - Rp2.850.000</option>
+                                        <option value="6800000" data-socket="AM5" data-igpu="true">AMD Ryzen 7 7800X3D
+                                            (8C/16T, 3D V-Cache) - Rp6.800.000</option>
+                                    </optgroup>
+                                    <optgroup label="Intel LGA1700 (Gen 12/13/14)">
+                                        <option value="1150000" data-socket="LGA1700" data-igpu="false">Intel Core
+                                            i3-12100F (4C/8T) - Rp1.150.000</option>
+                                        <option value="1450000" data-socket="LGA1700" data-igpu="true">Intel Core
+                                            i3-12100 (4C/8T, iGPU UHD 730) - Rp1.450.000</option>
+                                        <option value="1750000" data-socket="LGA1700" data-igpu="false">Intel Core
+                                            i5-12400F (6C/12T) - Rp1.750.000</option>
+                                        <option value="2700000" data-socket="LGA1700" data-igpu="false">Intel Core
+                                            i5-13400F (10C/16T) - Rp2.700.000</option>
+                                        <option value="4300000" data-socket="LGA1700" data-igpu="false">Intel Core
+                                            i5-14600KF (14C/20T) - Rp4.300.000</option>
+                                        <option value="6200000" data-socket="LGA1700" data-igpu="false">Intel Core
+                                            i7-14700KF (20C/28T) - Rp6.200.000</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label for="motherboard">Motherboard</label>
+                                <select id="motherboard">
+                                    <option value="0" data-socket="" data-ram="">Pilih motherboard</option>
+                                    <optgroup label="Socket AMD AM4 (DDR4)">
+                                        <option value="950000" data-socket="AM4" data-ram="DDR4">ASRock A520M-HVS DDR4 -
+                                            Rp950.000</option>
+                                        <option value="1150000" data-socket="AM4" data-ram="DDR4">MSI B450M-A PRO MAX II
+                                            DDR4 - Rp1.150.000</option>
+                                        <option value="1600000" data-socket="AM4" data-ram="DDR4">ASUS Prime B550M-K DDR4
+                                            - Rp1.600.000</option>
+                                        <option value="2350000" data-socket="AM4" data-ram="DDR4">MSI MAG B550M MORTAR
+                                            WIFI DDR4 - Rp2.350.000</option>
+                                        <option value="3150000" data-socket="AM4" data-ram="DDR4">ASUS ROG STRIX B550-F
+                                            GAMING WIFI DDR4 - Rp3.150.000</option>
+                                    </optgroup>
+                                    <optgroup label="Socket AMD AM5 (DDR5)">
+                                        <option value="1450000" data-socket="AM5" data-ram="DDR5">ASRock A620M-HDV/M.2+
+                                            DDR5 - Rp1.450.000</option>
+                                        <option value="1950000" data-socket="AM5" data-ram="DDR5">MSI PRO B650M-P DDR5 -
+                                            Rp1.950.000</option>
+                                        <option value="2850000" data-socket="AM5" data-ram="DDR5">ASUS TUF GAMING B650M-PLUS
+                                            WIFI DDR5 - Rp2.850.000</option>
+                                        <option value="3750000" data-socket="AM5" data-ram="DDR5">GIGABYTE B650 AORUS ELITE
+                                            AX DDR5 - Rp3.750.000</option>
+                                        <option value="6500000" data-socket="AM5" data-ram="DDR5">ASUS ROG STRIX X670E-F
+                                            GAMING WIFI DDR5 - Rp6.500.000</option>
+                                    </optgroup>
+                                    <optgroup label="Socket Intel LGA1700 (DDR4)">
+                                        <option value="1050000" data-socket="LGA1700" data-ram="DDR4">ASRock H610M-HVS/M.2
+                                            DDR4 - Rp1.050.000</option>
+                                        <option value="1650000" data-socket="LGA1700" data-ram="DDR4">ASUS Prime B760M-K
+                                            DDR4 - Rp1.650.000</option>
+                                        <option value="2600000" data-socket="LGA1700" data-ram="DDR4">MSI MAG B760M MORTAR
+                                            WIFI DDR4 - Rp2.600.000</option>
+                                    </optgroup>
+                                    <optgroup label="Socket Intel LGA1700 (DDR5)">
+                                        <option value="1850000" data-socket="LGA1700" data-ram="DDR5">ASRock B760M-HDV/M.2
+                                            DDR5 - Rp1.850.000</option>
+                                        <option value="3100000" data-socket="LGA1700" data-ram="DDR5">ASUS TUF GAMING
+                                            B760-PLUS WIFI DDR5 - Rp3.100.000</option>
+                                        <option value="4450000" data-socket="LGA1700" data-ram="DDR5">MSI MAG Z790 TOMAHAWK
+                                            WIFI DDR5 - Rp4.450.000</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label for="ram">RAM (Memory)</label>
+                                <select id="ram">
+                                    <option value="0" data-ram="">Pilih RAM</option>
+                                    <optgroup label="RAM DDR4">
+                                        <option value="260000" data-ram="DDR4">8GB (1x8GB) DDR4 3200MHz - Rp260.000
+                                        </option>
+                                        <option value="480000" data-ram="DDR4">16GB (2x8GB) DDR4 3200MHz Dual Channel -
+                                            Rp480.000</option>
+                                        <option value="620000" data-ram="DDR4">16GB (2x8GB) DDR4 3600MHz RGB Dual Channel -
+                                            Rp620.000</option>
+                                        <option value="890000" data-ram="DDR4">32GB (2x16GB) DDR4 3200MHz Dual Channel -
+                                            Rp890.000</option>
+                                        <option value="1150000" data-ram="DDR4">32GB (2x16GB) DDR4 3600MHz RGB Dual Channel
+                                            - Rp1.150.000</option>
+                                    </optgroup>
+                                    <optgroup label="RAM DDR5">
+                                        <option value="750000" data-ram="DDR5">16GB (2x8GB) DDR5 5200MHz Dual Channel -
+                                            Rp750.000</option>
+                                        <option value="1550000" data-ram="DDR5">32GB (2x16GB) DDR5 6000MHz CL30 (AMD EXPO /
+                                            XMP) - Rp1.550.000</option>
+                                        <option value="1850000" data-ram="DDR5">32GB (2x16GB) DDR5 6000MHz RGB CL30 -
+                                            Rp1.850.000</option>
+                                        <option value="3200000" data-ram="DDR5">64GB (2x32GB) DDR5 6000MHz Dual Channel -
+                                            Rp3.200.000</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label for="gpu">Kartu Grafis (GPU)</label>
+                                <select id="gpu">
+                                    <option value="0" data-minwatt="0">Tanpa GPU tambahan (gunakan iGPU) - Rp0</option>
+                                    <optgroup label="Entry &amp; Budget Gaming">
+                                        <option value="1350000" data-minwatt="450">AMD Radeon RX 580 8GB GDDR5 -
+                                            Rp1.350.000</option>
+                                        <option value="1900000" data-minwatt="400">NVIDIA GeForce GTX 1650 4GB GDDR6 -
+                                            Rp1.900.000</option>
+                                        <option value="2850000" data-minwatt="450">AMD Radeon RX 6600 8GB GDDR6 -
+                                            Rp2.850.000</option>
+                                        <option value="2950000" data-minwatt="450">NVIDIA GeForce RTX 3050 6GB GDDR6 -
+                                            Rp2.950.000</option>
+                                    </optgroup>
+                                    <optgroup label="Mid-Range 1080p / 1440p Gaming">
+                                        <option value="4350000" data-minwatt="500">AMD Radeon RX 7600 8GB GDDR6 -
+                                            Rp4.350.000</option>
+                                        <option value="4900000" data-minwatt="500">NVIDIA GeForce RTX 4060 8GB GDDR6 -
+                                            Rp4.900.000</option>
+                                        <option value="6450000" data-minwatt="550">NVIDIA GeForce RTX 4060 Ti 8GB GDDR6 -
+                                            Rp6.450.000</option>
+                                        <option value="7400000" data-minwatt="650">AMD Radeon RX 7700 XT 12GB GDDR6 -
+                                            Rp7.400.000</option>
+                                    </optgroup>
+                                    <optgroup label="High-End &amp; Enthusiast (1440p / 4K / Rendering)">
+                                        <option value="10500000" data-minwatt="650">NVIDIA GeForce RTX 4070 Super 12GB
+                                            GDDR6X - Rp10.500.000</option>
+                                        <option value="14700000" data-minwatt="750">NVIDIA GeForce RTX 4070 Ti Super 16GB
+                                            GDDR6X - Rp14.700.000</option>
+                                        <option value="18800000" data-minwatt="750">NVIDIA GeForce RTX 4080 Super 16GB
+                                            GDDR6X - Rp18.800.000</option>
+                                        <option value="32500000" data-minwatt="850">NVIDIA GeForce RTX 4090 24GB GDDR6X -
+                                            Rp32.500.000</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label for="storage">Penyimpanan SSD</label>
+                                <select id="storage">
+                                    <option value="0">Pilih SSD</option>
+                                    <optgroup label="SSD SATA 2.5 Inch">
+                                        <option value="250000">SSD SATA 256GB (500 MB/s) - Rp250.000</option>
+                                        <option value="420000">SSD SATA 512GB (500 MB/s) - Rp420.000</option>
+                                    </optgroup>
+                                    <optgroup label="SSD NVMe M.2 PCIe Gen 3">
+                                        <option value="480000">SSD NVMe 512GB Gen3 (2500 MB/s) - Rp480.000</option>
+                                        <option value="820000">SSD NVMe 1TB Gen3 (3500 MB/s) - Rp820.000</option>
+                                    </optgroup>
+                                    <optgroup label="SSD NVMe M.2 PCIe Gen 4 (High Speed)">
+                                        <option value="1050000">SSD NVMe 1TB Gen4 (5000 MB/s) - Rp1.050.000</option>
+                                        <option value="1450000">SSD NVMe 1TB Gen4 Pro (7000 MB/s) - Rp1.450.000</option>
+                                        <option value="1850000">SSD NVMe 2TB Gen4 (5000 MB/s) - Rp1.850.000</option>
+                                        <option value="2450000">SSD NVMe 2TB Gen4 Pro (7400 MB/s) - Rp2.450.000</option>
+                                        <option value="4750000">SSD NVMe 4TB Gen4 Pro (7400 MB/s) - Rp4.750.000</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label for="psu">Power Supply (PSU)</label>
+                                <select id="psu">
+                                    <option value="0" data-watt="0">Pilih PSU</option>
+                                    <optgroup label="Kapasitas Standar (Entry - Mid)">
+                                        <option value="420000" data-watt="400">400W 80+ Standard - Rp420.000</option>
+                                        <option value="520000" data-watt="450">450W 80+ Bronze - Rp520.000</option>
+                                        <option value="680000" data-watt="550">550W 80+ Bronze (Deepcool / FSP) -
+                                            Rp680.000</option>
+                                        <option value="890000" data-watt="650">650W 80+ Bronze (MSI MAG / Cooler Master) -
+                                            Rp890.000</option>
+                                    </optgroup>
+                                    <optgroup label="Kapasitas Tinggi &amp; Modular (High-End)">
+                                        <option value="1150000" data-watt="750">750W 80+ Bronze (Seasonic / Corsair) -
+                                            Rp1.150.000</option>
+                                        <option value="1550000" data-watt="750">750W 80+ Gold Fully Modular - Rp1.550.000
+                                        </option>
+                                        <option value="1950000" data-watt="850">850W 80+ Gold ATX 3.0 PCIe 5.0 - Rp1.950.000
+                                        </option>
+                                        <option value="2750000" data-watt="1000">1000W 80+ Gold ATX 3.0 PCIe 5.0 -
+                                            Rp2.750.000</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label for="cooler">Pendingin CPU (Cooler)</label>
+                                <select id="cooler">
+                                    <option value="0">Pilih pendingin CPU (opsional / bawaan)</option>
+                                    <optgroup label="Air Cooler (Kipas &amp; Heatpipe)">
+                                        <option value="0">Stock cooler bawaan prosesor - Rp0</option>
+                                        <option value="250000">Air Cooler Single Tower (Deepcool AG400) - Rp250.000
+                                        </option>
+                                        <option value="560000">Air Cooler Dual Tower RGB (Peerless Assassin 120 SE) -
+                                            Rp560.000</option>
+                                    </optgroup>
+                                    <optgroup label="Liquid Cooler (AIO Watercooling)">
+                                        <option value="850000">Liquid Cooler AIO 240mm ARGB - Rp850.000</option>
+                                        <option value="1350000">Liquid Cooler AIO 360mm ARGB - Rp1.350.000</option>
+                                        <option value="2450000">Liquid Cooler AIO 360mm LCD Screen - Rp2.450.000</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label for="case">Casing PC</label>
+                                <select id="case">
+                                    <option value="0">Pilih casing</option>
+                                    <optgroup label="Basic &amp; Compact">
+                                        <option value="260000">Casing Office Standard Black (1 Fan) - Rp260.000</option>
+                                        <option value="420000">Casing Compact mATX Mesh Tempered Glass (3 Fan RGB) -
+                                            Rp420.000</option>
+                                    </optgroup>
+                                    <optgroup label="Gaming &amp; Airflow Mesh">
+                                        <option value="650000">Casing Mid-Tower Gaming High-Airflow (4 Fan ARGB) -
+                                            Rp650.000</option>
+                                        <option value="1250000">Casing Airflow ATX Premium (Montech Sky Two / Deepcool) -
+                                            Rp1.250.000</option>
+                                    </optgroup>
+                                    <optgroup label="Aquarium / Dual Chamber (Showcase)">
+                                        <option value="850000">Casing Panoramic Aquarium Dual-Chamber (3 Fan Reverse ARGB) -
+                                            Rp850.000</option>
+                                        <option value="2350000">Casing Premium Dual Chamber (Lian Li O11 Dynamic EVO) -
+                                            Rp2.350.000</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn reset-builder" id="resetBuilder">Reset rakitan</button>
+                    </div>
+
+                    <aside class="builder-summary" data-reveal style="--reveal-delay:.1s">
+                        <div class="summary-top">
+                            <h3>Ringkasan rakitan</h3>
+                            <span class="summary-live">Live estimate</span>
+                        </div>
+
+                        <div id="buildList" class="build-list">
+                            <p class="empty-build">Pilih komponen untuk melihat ringkasan.</p>
+                        </div>
+
+                        <div id="compatibility" class="compatibility">
+                            Pilih komponen untuk memeriksa kompatibilitas.
+                        </div>
+
+                        <div class="total-price">
+                            <span>Estimasi total harga</span>
+                            <strong id="totalPrice">Rp0</strong>
+                        </div>
+
+                        <p class="builder-disclaimer">
+                            Harga simulasi, bukan penawaran resmi. Pastikan kompatibilitas dan harga aktual sebelum
+                            membeli.
+                        </p>
+
+                        <button type="button" class="btn order-build" id="orderBuild">Pesan rakitan via
+                            WhatsApp</button>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- INFO TOKO -->
+        <section id="info" class="store-info">
+            <div class="container info-layout">
+                <div class="info-intro" data-reveal>
+                    <p class="kicker">05 — Info Toko</p>
+                    <h2>Mampir ke Manahan, atau kami yang datang.</h2>
+                    <p>
+                        Kunjungi kami di Manahan, Surakarta, atau pakai layanan home call.
+                        Konfirmasi jadwal lewat WhatsApp terlebih dahulu.
+                    </p>
+                    <div class="info-actions">
+                        <a href="#" class="btn" id="infoWhatsApp">Chat via WhatsApp</a>
+                        <!-- Ganti link di bawah dengan link pin toko dari Google Maps (Bagikan > Salin link). -->
+                        <a href="https://www.google.com/maps/search/?api=1&query=Manahan+Surakarta"
+                            class="btn btn-outline" target="_blank" rel="noopener noreferrer">Buka di Google Maps</a>
+                    </div>
+                </div>
+
+                <dl class="info-list" data-reveal style="--reveal-delay:.1s">
+                    <div class="info-row">
+                        <dt>Alamat</dt>
+                        <dd>Manahan, Surakarta, Jawa Tengah</dd>
+                    </div>
+                    <div class="info-row">
+                        <dt>Jam buka</dt>
+                        <!-- Ganti dengan jam buka asli, misalnya: Senin-Sabtu, 09.00-17.00 -->
+                        <dd>Konfirmasi lewat WhatsApp sebelum datang</dd>
+                    </div>
+                    <div class="info-row">
+                        <dt>Home call</dt>
+                        <dd>Area Surakarta dan sekitarnya (dengan perjanjian)</dd>
+                    </div>
+                    <div class="info-row">
+                        <dt>Garansi</dt>
+                        <dd>3 bulan untuk setiap pekerjaan</dd>
+                    </div>
+                    <div class="info-row">
+                        <dt>WhatsApp</dt>
+                        <dd><a href="#" id="infoWhatsAppText">+62 882-0052-30761</a></dd>
+                    </div>
+                    <div class="info-row">
+                        <dt>Email</dt>
+                        <dd><a href="mailto:SkyBoundNetSKA@gmail.com">SkyBoundNetSKA@gmail.com</a></dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- KONTAK -->
+        <section class="contact-section" id="kontak">
+            <div class="container">
+                <div class="contact-box" data-reveal>
+                    <div class="contact-copy">
+                        <p class="kicker dark">06 — Kontak</p>
+                        <h2>Siap konsultasi atau rakit PC?</h2>
+                        <p>
+                            Ceritakan kebutuhan Anda. Kami bantu pilihkan perangkat,
+                            susun rakitan sesuai budget, atau jadwalkan maintenance berkala.
+                        </p>
+                    </div>
+                    <div class="contact-actions">
+                        <a href="#" class="btn btn-dark" id="contactWhatsApp">Hubungi via WhatsApp <span
+                                class="btn-arrow">↗</span></a>
+                        <span class="contact-note">Balasan cepat · Senin&ndash;Sabtu</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <a href="#home" class="logo" aria-label="SkyBoundNet — kembali ke beranda">
+                    <img src="logo-terang.png" width="306" height="144" alt="SkyBoundNet">
+                </a>
+                <p>
+                    Partner teknologi Anda di Surakarta untuk penjualan komputer,
+                    perakitan PC custom, dan maintenance perangkat.
+                </p>
+            </div>
+
+            <div>
+                <h3>Navigasi</h3>
+                <div class="footer-links">
+                    <a href="#layanan">Layanan</a>
+                    <a href="#keunggulan">Keunggulan</a>
+                    <a href="#portofolio">Portofolio</a>
+                    <a href="#simulasi">Simulasi Rakit PC</a>
+                    <a href="#info">Info Toko</a>
+                    <a href="#kontak">Kontak</a>
+                </div>
+            </div>
+
+            <div>
+                <h3>Kontak</h3>
+                <div class="footer-links">
+                    <p>Manahan, Surakarta, Jawa Tengah</p>
+                    <p>SkyBoundNetSKA@gmail.com</p>
+                    <a href="#" id="footerWhatsApp">WhatsApp: +62 882-0052-30761</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            &copy; <span id="year"></span> SkyBoundNet. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- TOMBOL WHATSAPP MELAYANG -->
+    <a href="#" class="whatsapp-float" id="floatingWhatsApp" aria-label="Hubungi SkyBoundNet melalui WhatsApp"
+        title="Chat WhatsApp">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
